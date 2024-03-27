@@ -1,0 +1,13 @@
+version: '3.3'
+
+services:
+  flask:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    environment:
+      - TB_API_USERNAME=suhasdevmanecardiffuni@gmail.com
+      - TB_API_PASSWORD=Suhas@551993
+    restart: always
